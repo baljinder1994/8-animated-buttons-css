@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .sliding-1 {
+  text-shadow: var(--t, 0ch) 0 #fff;
+  text-indent: calc(-2*var(--t, 0ch));
+  background: linear-gradient(currentColor 0 0) right/var(--d, 0) 100% no-repeat;
+  transition: 0.5s linear;
+}
+.sliding-1:hover {
+  --d: 100%;
+  --t: 11ch;
+}
+
+
+
+.sliding-2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: calc(-1*var(--t, 0ch)) 0 #fff;
+  text-indent: var(--t, 0ch);
+  background: linear-gradient(currentColor 0 0) left/var(--d, 0) 100% no-repeat;
+  transition: 0.5s linear;
+}
+.sliding-2:hover {
+  --d: 100%;
+  --t: 11ch;
+}
+
+
+.sliding-3 {
+  height: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 0 -1.2em #fff;
+  line-height: var(--t, 1.2em);
+  background: linear-gradient(currentColor 0 0) top/100% var(--d, 0) no-repeat;
+  transition: 0.5s linear;
+}
+.sliding-3:hover {
+  --d: 100%;
+  --t: 3.6em;
+}
+.sliding-4 {
+  height: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 0 calc(-0.5*var(--t, 0em)) #fff;
+  line-height: calc(1.2em + var(--t, 0em));
+  background: linear-gradient(currentColor 0 0) top/100% var(--d, 0) no-repeat;
+  transition: 0.5s linear;
+}
+.sliding-4:hover {
+  --d: 100%;
+  --t: 2.4em;
+}
+
+.sliding-5 {
+  height: 1.2em;
+  color: #fff;
+  text-shadow: 0 -1.2em black;
+  line-height: var(--t, 3.6em);
+  background: linear-gradient(black 0 0) bottom/100% var(--d, 0%) no-repeat;
+  transition: 0.5s linear;
+}
+.sliding-5:hover {
+  --d: 100%;
+  --t: 1.2em;
+}
+
+
+.sliding-6 {
+  height: 1.2em;
+  color: #fff;
+  text-shadow: 0 calc(-0.5*var(--t, 2.4em)) black;
+  line-height: calc(1.2em + var(--t, 2.4em));
+  background: linear-gradient(black 0 0) bottom/100% var(--d, 0) no-repeat;
+  transition: 0.5s linear;
+}
+.sliding-6:hover {
+  --d: 100%;
+  --t: 0em;
+}
+.sliding-7 {
+  text-shadow: 11ch 0 #fff;
+  text-indent: calc(-2*var(--t, 0px));
+  background: linear-gradient(currentColor 0 0) right/var(--d, 0) 100% no-repeat;
+  transition: 0.5s linear;
+}
+
+.sliding-7:hover {
+  --d: 100%;
+  --t: 11ch;
+}
+.sliding-8 {
+  text-shadow: -11ch 0 #fff;
+  text-indent: var(--t, 0);
+  background: linear-gradient(currentColor 0 0) left/var(--d, 0) 100% no-repeat;
+  transition: 0.5s linear;
+}
+
+.sliding-8:hover {
+  --d: 100%;
+  --t: 11ch;
+}
+
+/**/
+div[class] {
+  display:inline-block;
+  font-size:40px;
+  font-family:monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  margin:25px;
+  width:11ch;
+  cursor:pointer;
+}
+
+body {
+  text-align:center;
+}
+  </style>
+</head>
+<body>
+  <div class="sliding-1">1. Hover me </div>
+<div class="sliding-2">2. Hover me </div>
+<div class="sliding-3">3. Hover me </div>
+<div class="sliding-4">4. Hover me </div>
+<div class="sliding-5">5. Hover me </div>
+<div class="sliding-6">6. Hover me </div>
+<div class="sliding-7">7. Hover me </div>
+<div class="sliding-8">8. Hover me </div>
+</body>
+</html>
